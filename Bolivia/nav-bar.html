@@ -1,0 +1,132 @@
+<header>
+    <style>
+    html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: grey;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+header {
+    background-color: blue; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    /* display: flex; */
+}
+
+
+
+header h1 {
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.btn-menu {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+header nav {
+    display: none;
+    width: 100%;
+    clear: both;
+    margin: auto 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav a{
+    text-transform: uppercase;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+.show header {
+    height: auto
+}
+
+.show header nav{
+    display: block;
+}
+
+@media (min-width: 760px) {
+    .btn-menu{
+        display:none
+    }
+
+    header {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    header nav {
+        display: block;
+        width: auto;
+        max-width: 550px;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav li {
+        flex: 1;
+        max-width: 100px;
+   }
+
+    header nav a {
+            padding: 0 30px;    
+    }
+}
+    
+    
+    </style>
+    <h1><a href="index.html">Bolivia</a></h1>
+     <button class="btn-menu">☰</button>
+    <nav>
+        <ul>
+            <li><a href="Sights.html">Sights</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="Photo-Credits.html">Photo Credits</a></li>
+        </ul>
+    </nav>
+    </header>
