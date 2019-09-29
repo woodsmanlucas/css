@@ -1,0 +1,24 @@
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+.row {
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: #fff;
+    justify-content: space-between;
+    display: flex;
+}
+
+.row img {
+    width: 60%;
+}
+
+.row p {
+    margin: auto;
+}
