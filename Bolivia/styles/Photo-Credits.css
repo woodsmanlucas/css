@@ -15,6 +15,15 @@ html {
     display: flex;
 }
 
+.caption{
+    margin: auto;
+    padding: 20px;
+}
+
+.caption p:first-child {
+    padding-bottom: 40px
+}
+
 .row img {
     width: 60%;
 }
