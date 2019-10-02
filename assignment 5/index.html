@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - Acme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+<div class="inner-header">
+	<h1><a href="#">Acme</a></h1>
+	<button class="nav-button" id="nav-button"><span class="hamburger-icon">&#9776;</span><span class="sr-only">Menu</span></button>
+	<nav class="main-nav" id="main-nav">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	</nav>
+</div><!-- end inner-header -->
+</header>
+<div class="content">
+<main>
+<div class="hero-slider">
+	<div class="hero-slideshow cycle-slideshow" 
+		data-cycle-fx="scrollHorz"
+		data-cycle-timeout="0"
+		data-cycle-prev="#prev"
+		data-cycle-next="#next"
+		data-cycle-pager="#adv-custom-pager"
+		data-cycle-pager-template="<a href='#'><img src='{{src}}' alt='{{alt}}'></a>">
+		<img src="images/slide-light-bulbs-01.jpg" alt="Light bulbs">
+		<img src="images/slide-light-bulbs-02.jpg" alt="Light bulbs">
+		<img src="images/slide-light-bulbs-03.jpg" alt="Light bulbs">
+	</div>
+	<!-- empty element for pager links -->
+	<div id="adv-custom-pager" class="hero-slider-th-container"></div>
+	<div class="hero-slider-controls-container">
+	<button id="prev" class="prev">
+		<span class="sr-only">Previous Slide</span>
+		<img src="images/arrow-left-white.png" alt="Left arrow">
+	</button>
+	<button id="next" class="next">
+		<span class="sr-only">Next Slide</span>
+		<img src="images/arrow-right-white.png" alt="Right arrow">
+	</button>
+	</div>
+</div><!-- end hero-slider -->
+<section class="section-01">
+	<h1>Welcome</h1>
+	<div class="row">
+		<article class="article-01">
+			<figure>
+				<img src="images/light-bulb-01.jpg" alt="Light bulb in hands">
+			</figure>
+			<div class="article-text">
+				<h1>Sub Title</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</div><!-- end article-text -->            
+		</article>
+		<article class="article-02">
+			<figure>
+				<img src="images/light-bulb-02.jpg" alt="Floresent light bulb">
+			</figure>
+			<div class="article-text">
+				<h1>Sub Title</h1>
+				<p>Suspendisse et tincidunt massa.</p> 
+			</div><!-- end article-text -->           
+		</article>
+		<article class="article-03">
+			<figure>
+				<img src="images/light-bulb-03.jpg" alt="Multiple light bulbs in a diagonal row">
+				<figcaption class="special">
+					Special Feature
+				</figcaption>
+			</figure>
+			<div class="article-text">
+				<h1>Sub Title</h1>
+				<p>Nulla malesuada lacinia enim eget ultrices.</p> 
+			</div><!-- end article-text -->   
+		</article>
+	</div> <!-- end row --> 
+</section>
+<article class="section-02">
+	<h1>About Our Company</h1>	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, tempora voluptatum. Repellendus aperiam et adipisci dolor, optio fugiat, perspiciatis exercitationem, dolore voluptas, repudiandae sit. Error veritatis reprehenderit veniam optio cumque iusto, sequi impedit officia facere non quaerat aliquam, delectus itaque repellendus obcaecati eos enim molestiae magni aliquid ratione mollitia aspernatur quod consectetur, aperiam. Molestias voluptates odio suscipit. Mollitia quaerat cum provident ducimus sapiente, numquam expedita necessitatibus amet asperiores neque. Ut suscipit rem sapiente repudiandae quisquam.</p>	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, tempora voluptatum. Repellendus aperiam et adipisci dolor, optio fugiat, perspiciatis exercitationem, dolore voluptas, repudiandae sit. Error veritatis reprehenderit veniam optio cumque iusto, sequi impedit officia facere non quaerat aliquam, delectus itaque repellendus obcaecati eos enim molestiae magni aliquid ratione mollitia aspernatur quod consectetur, aperiam. Molestias voluptates odio suscipit. Mollitia quaerat cum provident ducimus sapiente, numquam expedita necessitatibus amet asperiores neque. Ut suscipit rem sapiente repudiandae quisquam.</p>	
+</article>
+</section>
+</main>
+<footer>
+	<p>&copy; 2017 Michael Whyte</p>
+	<p>For Educational Use Only</p>
+	<p><a href="credits.html">Image Credits</a></p>
+</footer>
+</div><!-- end content -->
+<script src="scripts/jquery-3.4.1.min.js"></script>
+<script src="scripts/jquery.cycle2.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
