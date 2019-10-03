@@ -13,10 +13,11 @@ html {
     background-color: #fff;
     justify-content: space-between;
     display: flex;
+    padding: 20px;
 }
 
 .caption{
-    margin: auto;
+    margin-right: auto;
     padding: 20px;
 }
 
@@ -25,7 +26,8 @@ html {
 }
 
 .row img {
-    width: 60%;
+    width: 40%;
+    object-fit: contain;
 }
 
 .row p {

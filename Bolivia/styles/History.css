@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+article{
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+}
