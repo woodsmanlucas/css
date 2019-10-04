@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+body {
+	margin: 0;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	background-color: #a5a5a5;
+}
+
+header,
+main,
+footer {
+	max-width: 1200px;
+	margin: 0 auto;;
+}
+
+h1, h2, h3, nav a {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+header {
+	background-color: black;
+	color: white;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+header h1 {
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+}
+
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	flex: 1;
+}
+
+nav a {
+	display: block;
+	line-height: 50px;
+	padding: 0 1.2rem;
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: rgba(255,255,255,0.2);
+	outline: none;
+}
+
+main {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+}
+
+section p {
+	line-height: 1.4;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.section-01,
+.section-04 {
+	padding-top: 1.5rem;
+}
+
+section h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.section-01 {
+	background-color: #FFF6E5;
+}
+
+.content-01 .text,
+.content-03 .text {
+	padding: 0 1.5rem 1rem;
+}
+
+.section-02 {
+	background-color: #3E454C;
+	padding: 1.5rem;
+}
+
+.content-02 {
+	grid-column: 1 / 5;
+	background-color: white;
+	padding: 1.5rem;
+}
+
+.content-02 h1 {
+	text-align: center;
+}
+
+/* Gameboard styles */
+.content {
+	margin: 0;
+	padding: 30px 50px;
+}
+
+.game-board {
+	display: grid;
+	grid-template-columns: repeat(5, 10vw);
+	grid-template-rows: repeat(5, 10vw);
+	grid-gap: .5vh;
+	justify-content: center;
+}
+
+.box {
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-06{
+	grid-column: 5/6;
+	grid-row: 2/3;
+}
+
+.box-07 {
+	grid-column: 5/6;
+	grid-row: 3/4;
+}
+
+.box-08{
+	grid-column: 5/6;
+	grid-row: 4/5;
+}
+
+.box-09 {
+	grid-row: 5/6;
+	grid-column: 5/6;
+}
+
+.box-10 {
+	grid-column: 4/5;
+	grid-row: 5/ 6;
+}
+
+.box-11 {
+	grid-row: 5 / 6;
+	grid-column: 3 / 4;
+}
+
+.box-12 {
+	grid-row: 5 / 6;
+	grid-column: 2 / 3;
+}
+
+.box-13 {
+	grid-row: 5 / 6;
+	grid-column: 1/2;
+}
+
+.box-14 {
+	grid-row: 4/5;
+	grid-column: 1/2;
+}
+
+.box-15 {
+	grid-row: 3/4;
+	grid-column: 1/2;
+}
+
+.box-17 {
+	background-color: royalblue;
+	color: white;
+	grid-row: 2 / 4;
+	grid-column: 2 / 4;
+	
+}
+
+.box-18 {
+	background-color: darkorange;
+	color: white;
+	grid-row: 2 / 4;
+	grid-column: 4/ 5;
+}
+
+.box-19 {
+	background-color: forestgreen;
+	color: white;
+	grid-row: 4 /5;
+	grid-column: 2/ span 3;
+}
+
+.section-03 article {
+	color: white;
+	padding: 2rem;
+	grid-column: span 2;
+}
+
+.section-03 h1 {
+	text-align: center;
+}
+
+.article-01 {
+	background-color: #2185C5;
+}
+
+.article-02 {
+	background-color: #FF7F66;
+}
+
+/* Grid Gallery Styles */
+.section-05 {
+	padding: 3rem 0 3.6rem;
+}
+
+.gallery {
+	padding: 0 1.25rem 1.25rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 20px;
+}
+
+.gallery-item {
+	position: relative;
+}
+
+.gallery-item img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Make Gallery Items maintain a 3:2 Aspect Ratio */
+
+.gallery-item p {
+	margin: 0;
+	line-height: 0;
+	padding: 20px;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1.3rem;
+}
+
+footer a {
+	color: white;
+}
+
+@media (min-width: 620px){
+
+	section {
+		grid-template-columns: 1fr repeat(2, minmax(auto, 540px)) 1fr;
+	}
+
+	.content-01,
+	.content-04 {
+		grid-column: 2 / 4;
+	}
+
+	header {
+		padding-left: 1.2rem;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header h1,
+	header nav a {
+		line-height: 70px;
+	}
+
+	.section-02{
+		order: 1;
+	}
+
+}
+
+@media (min-width: 2000px) {
+	/* These styles are for large desktops only...
+	...do NOT use these settings for smaller tablet
+	and mobile screen sizes... */
+	.game-board {
+		display: grid;
+		grid-template-columns: repeat(5, 200px);
+		grid-template-rows: repeat(5, 200px);
+	}
+
+}
+
+
+
+
+
+
+
+
+
