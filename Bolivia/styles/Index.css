@@ -24,3 +24,16 @@ h1 {
     color: #2699FB;
     font-size: 3em;
 }
+
+@media(min-width: 700px){
+    .wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: #fff;
+        height: 110vh;
+    }
+
+    body {
+        background-color: grey;
+    }
+}

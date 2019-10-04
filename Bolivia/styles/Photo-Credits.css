@@ -33,3 +33,21 @@ html {
 .row p {
     margin: auto;
 }
+
+@media( min-width: 700px) {
+    .rows {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        max-width: 1000px;
+    }
+
+    .wrapper {
+        background-color: #fff;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    body {
+        background-color: grey;
+    }
+}
