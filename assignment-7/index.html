@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="wrapper">
+<header>
+  <a class="logo" href="#0"><img src="images/logo.svg" alt="logo"></a>	
+  <h1><a href="#0">Web Site</a></h1>
+  <button class="hamburger-menu" id="btn-menu">
+      <div class="hamburger-menu-content" tabindex="-1">
+	      <span class="sr-only">Menu</span>
+        <span class="bar" id="bar1"></span>
+        <span class="bar" id="bar2"></span>
+        <span class="bar" id="bar3"></span>
+        <span class="bar" id="bar4"></span>
+        <span class="bar" id="bar5"></span>
+        <span class="bar" id="bar6"></span>
+      </div><!-- end hamburger-menu-content -->
+  </button>
+  <nav id="main-navigation">
+    <ul>
+      <li><a href="#0">Lorem</a></li>
+      <li><a href="#0">Veniam</a></li>
+      <li><a href="#0">Quibus</a></li>
+      <li><a href="#0">Possi</a></li>
+      <li><a href="#0">Dolor</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="banner">
+    <!-- 
+
+      The banner image should be a responsive image which meets the 
+      following specs:
+
+      - At screen sizes below 960px (max-width: 960px) the image size is:
+      -------- calc(100vw - 60px) *** image is fluid
+
+      - At screens above 960px the image size is:
+      -------- 900px *** image is at a fixed size of 900px
+
+      - The browser should be able to choose from the following images:
+      ------- vancouver-large.jpg *** 1800 pixels wide
+      ------- vancouver-medium.jpg *** 900 pixels wide
+      ------- vancouver-small.jpg *** 450 pixels wide
+
+    -->
+    <img alt="Vancouver skyline" src="images/vancouver-large.jpg"
+        srcset="images/vancouver-large.jpg 1800w, images/vancouver-medium.jpg 900w,
+        images/vancouver-small.jpg 450w"
+        sizes="(max-width: 960px) calc(100vw - 60px), 960px">
+  </div><!-- end banner -->
+  <div class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <!-- 
+
+          This gallery image should be a responsive image which meets the 
+          following specs:
+
+          - At screen sizes below 559px (max-width: 559px) the image size is:
+          -------- calc(100vw - 110px) *** image is fluid
+
+          - At screen sizes below 776px (max-width: 776px) the image size is:
+          -------- calc(49vw - 110px) *** image is fluid
+
+          - At screens above 776px the image size is:
+          -------- 320px *** image is at a fixed size of 320px
+
+          - The browser should be able to choose from the following images:
+          ------- false-creek-large.jpg *** 1000 pixels wide
+          ------- false-creek-medium.jpg *** 700 pixels wide
+          ------- false-creek-small.jpg *** 500 pixels wide
+          ------- false-creek-extra-small.jpg *** 300 pixels wide
+
+        -->
+        <img alt="False Creek" src="images/false-creek-medium.jpg"
+              srcset="images/false-creek-large.jpg 1000w,
+                      images/false-creek-medium.jpg 700w,
+                      images/false-creek-small.jpg 500w,
+                      images/false-creek-extra-small.jpg 300w"
+                sizes="(max-width: 559px) calc(100vw - 110px),
+                 (max-width: 776px) calc(49vw - 110px), 320px">
+      </div><!-- end gallery-item -->
+      <div class="gallery-item">
+        <!-- 
+
+          This gallery image should be a responsive image which meets the 
+          following specs:
+
+          - At screen sizes below 559px (max-width: 559px) the image size is:
+          -------- calc(100vw - 110px) *** image is fluid
+
+          - At screen sizes below 776px (max-width: 776px) the image size is:
+          -------- calc(49vw - 110px) *** image is fluid
+
+          - At screens above 776px the image size is:
+          -------- 320px *** image is at a fixed size of 320px
+
+          - The browser should be able to choose from the following images:
+          ------- english-bay-large.jpg *** 1000 pixels wide
+          ------- english-bay-medium.jpg *** 700 pixels wide
+          ------- english-bay-small.jpg *** 500 pixels wide
+          ------- english-bay-extra-small.jpg *** 300 pixels wide
+
+        -->
+        <img alt="English Bay" src="images/false-creek-medium.jpg"
+              srcset="images/english-bay-large.jpg 1000w,
+                      images/english-bay-medium.jpg 700w,
+                      images/english-bay-small.jpg 500w,
+                      images/english-bay-extra-small.jpg 300w"
+              sizes="(max-width: 559px) calc(100vw - 110px), 
+              (max-width: 776px) calc(49vw - 110px), 320px">
+      </div><!-- end gallery-item -->
+    </div><!-- end gallery -->
+  </div><!-- end gallery-section -->
+  <article>
+    <h1>Article Heading</h1>
+    <!-- 
+
+      This gallery image should be a responsive image which meets the 
+      following specs:
+
+      - This image should be wrapped in a "picture" element
+
+      - The cropped version of the image (group-cropped.jpg) should be
+        displayed at screen sizes larger than 640px (max-width: 640px)
+
+      *** Make sure to keep the "featured-image" class on the "img" 
+          element. This is needed for the CSS
+
+    -->
+
+    <picture>
+        <source srcset="images/group-cropped.jpg" media="(max-width: 640px)">
+      <img class="featured-image" src="images/group.jpg" alt="Group of people">      	
+    </picture>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in tincidunt nisi, in faucibus enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse aliquet erat neque, laoreet condimentum enim volutpat sit amet. Donec ullamcorper quam ut convallis adipiscing. Sed vel libero id mauris ultrices sollicitudin id a mi. Mauris adipiscing non felis ultricies vehicula. Aliquam nec tincidunt tellus, non sollicitudin urna.</p>
+    
+    <p>Integer purus magna, rhoncus eget risus nec, venenatis ullamcorper lacus. Curabitur commodo aliquam libero, sed porta sem luctus eget. In enim lectus, tempor at lorem id, cursus aliquet nisl. Pellentesque consectetur mi urna, eu porta eros condimentum eget. Praesent consectetur nunc et augue egestas, et adipiscing sem bibendum. Ut id congue orci, sed porta ante. Aliquam eget lacus elit. Etiam accumsan nec purus eu gravida. Aenean erat risus, dapibus eget felis hendrerit, elementum dignissim nulla. Vestibulum rhoncus pretium urna vitae tristique.</p>
+    
+    <p>Praesent neque eros, vulputate vel lectus eu, interdum lacinia libero. Aenean et ultricies libero. Aenean iaculis, dui in posuere vestibulum, massa felis tincidunt magna, eget lobortis libero libero vitae ligula. Ut sem ligula, pellentesque ac tincidunt posuere, auctor at orci. Etiam sit amet ante et lectus ultrices blandit. Phasellus eu felis pharetra felis interdum suscipit. Pellentesque id nisi velit.</p>
+    
+    <h2>Sub Heading</h2>
+    
+    <p>Maecenas ultricies felis at rutrum accumsan. Nullam euismod dui in sapien vehicula rhoncus. Phasellus gravida dui quis viverra accumsan. Curabitur vulputate ut tortor sed bibendum. Etiam dictum erat accumsan hendrerit pharetra. Maecenas lacus elit, ullamcorper nec diam vulputate, pellentesque tempus eros. Vivamus sagittis feugiat risus, a laoreet nulla iaculis et.</p>
+    
+    <p>Sed quis lacus interdum, condimentum mi luctus, dictum metus. Maecenas id tempor nulla. Nam dapibus, dui nec euismod varius, elit eros venenatis ante, ut vestibulum enim erat nec turpis. Sed lobortis nec lorem et feugiat. Donec sem quam, eleifend eu tincidunt facilisis, dapibus eget ligula. Quisque tempus felis non nibh porta, non sollicitudin tortor fringilla. Pellentesque sed nibh dictum, sollicitudin libero et, auctor diam. Fusce lacinia dolor ac odio ultrices, eget aliquam mi ullamcorper. Vestibulum id lectus sit amet lorem pharetra ullamcorper. Cras semper feugiat convallis. Mauris et rhoncus ante.</p>
+  </article>
+</main>
+<footer>
+    <p>&copy; 2019 Michael Whyte</p>
+    <p>All content for use on this web page only</p>
+</footer>
+</div><!-- end wrapper -->
+<script src="scripts/menu.js"></script>
+</body>
+</html>
